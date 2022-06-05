@@ -1,0 +1,10 @@
+ 20220525-021229,[command] python main_fm.py,[exp_id] FM_criteo_x4,[dataset_id] criteo_x4,[train] N.A.,[val] logloss: 0.510813 - AUC: 0.744628,[test] logloss: 0.505189 - AUC: 0.748120
+ 20220525-121305,[command] python main_fm.py,[exp_id] FM_criteo_x4,[dataset_id] criteo_x4,[train] N.A.,[val] logloss: 0.512729 - AUC: 0.744115,[test] logloss: 0.507182 - AUC: 0.747756
+ 20220525-121414,[command] python main_fm.py,[exp_id] FM_criteo_x4,[dataset_id] criteo_x4,[train] N.A.,[val] logloss: 0.510813 - AUC: 0.744628,[test] logloss: 0.505189 - AUC: 0.748120
+ 20220525-123255,[command] python main_fm.py,[exp_id] FM_criteo_x4,[dataset_id] criteo_x4,[train] N.A.,[val] logloss: 0.520399 - AUC: 0.717257,[test] logloss: 0.514144 - AUC: 0.726738
+ 20220525-132855,[command] python main_fm.py,[exp_id] FM_criteo_x4,[dataset_id] criteo_x4,[train] N.A.,[val] logloss: 0.489016 - AUC: 0.736058,[test] logloss: 0.479886 - AUC: 0.745386
+ 20220525-145242,[command] python main_fm.py,[exp_id] FM_criteo_x4,[dataset_id] criteo_x4,[train] N.A.,[val] logloss: 0.465919 - AUC: 0.738127,[test] logloss: 0.450573 - AUC: 0.749762
+ 20220525-145625,[command] python main_fm.py,[exp_id] FM_criteo_x4,[dataset_id] criteo_x4,[train] N.A.,[val] logloss: 0.717502 - AUC: 0.503661,[test] logloss: 0.718011 - AUC: 0.511418
+ 20220525-145904,[command] python main_fm.py,[exp_id] FM_criteo_x4,[dataset_id] criteo_x4,[train] N.A.,[val] logloss: 0.465919 - AUC: 0.738127,[test] logloss: 0.450573 - AUC: 0.749762
+ 20220526-013328,[command] python main_fm.py,[exp_id] FM_criteo_x4,[dataset_id] criteo_x4,[train] N.A.,[val] logloss: 0.465919 - AUC: 0.738127,[test] logloss: 0.450573 - AUC: 0.749762
+ 20220526-013957,[command] python main_fm.py,[exp_id] FM_criteo_x4,[dataset_id] criteo_x4,[train] N.A.,[val] logloss: 0.465919 - AUC: 0.738127,[test] logloss: 0.450573 - AUC: 0.749762

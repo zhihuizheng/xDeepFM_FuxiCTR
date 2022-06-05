@@ -1,0 +1,116 @@
+2022-05-28 12:00:55,854 P91424 INFO {
+    "batch_norm": "False",
+    "batch_size": "10000",
+    "cin_layer_units": "[32, 32, 32]",
+    "data_format": "csv",
+    "data_root": "./data/",
+    "dataset_id": "criteo_x1",
+    "debug": "False",
+    "dnn_hidden_units": "[500, 500, 500]",
+    "embedding_dim": "16",
+    "embedding_dropout": "0",
+    "embedding_regularizer": "0",
+    "epochs": "10",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'name': ['I1', 'I2', 'I3', 'I4', 'I5', 'I6', 'I7', 'I8', 'I9', 'I10', 'I11', 'I12', 'I13'], 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}, {'name': ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'C15', 'C16', 'C17', 'C18', 'C19', 'C20', 'C21', 'C22', 'C23', 'C24', 'C25', 'C26'], 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "label_col": "{'name': 'label', 'dtype': 'float'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "2",
+    "model": "xDeepFM",
+    "model_id": "xDeepFM_criteo_x1",
+    "model_root": "./checkpoints/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "./data/criteo_x1/test_sample.csv",
+    "train_data": "./data/criteo_x1/train_sample.csv",
+    "use_hdf5": "True",
+    "valid_data": "./data/criteo_x1/valid_sample.csv",
+    "verbose": "1",
+    "version": "pytorch",
+    "workers": "8"
+}
+2022-05-28 12:00:55,857 P91424 INFO Set up feature encoder...
+2022-05-28 12:00:55,857 P91424 INFO Reading file: ./data/criteo_x1/train_sample.csv
+2022-05-28 12:00:58,855 P91424 INFO Reading file: ./data/criteo_x1/valid_sample.csv
+2022-05-28 12:01:01,737 P91424 INFO Reading file: ./data/criteo_x1/test_sample.csv
+2022-05-28 12:01:04,722 P91424 INFO Preprocess feature columns...
+2022-05-28 12:01:07,845 P91424 INFO Fit feature encoder...
+2022-05-28 12:01:07,845 P91424 INFO Processing column: {'name': 'I1', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,845 P91424 INFO Processing column: {'name': 'I2', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,846 P91424 INFO Processing column: {'name': 'I3', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,846 P91424 INFO Processing column: {'name': 'I4', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,846 P91424 INFO Processing column: {'name': 'I5', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,846 P91424 INFO Processing column: {'name': 'I6', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,846 P91424 INFO Processing column: {'name': 'I7', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,846 P91424 INFO Processing column: {'name': 'I8', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,846 P91424 INFO Processing column: {'name': 'I9', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,846 P91424 INFO Processing column: {'name': 'I10', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,847 P91424 INFO Processing column: {'name': 'I11', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,847 P91424 INFO Processing column: {'name': 'I12', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,847 P91424 INFO Processing column: {'name': 'I13', 'active': True, 'dtype': 'float', 'type': 'numeric', 'preprocess': 'convert_to_bucket', 'na_value': 0}
+2022-05-28 12:01:07,847 P91424 INFO Processing column: {'name': 'C1', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:07,886 P91424 INFO Processing column: {'name': 'C2', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:07,925 P91424 INFO Processing column: {'name': 'C3', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,124 P91424 INFO Processing column: {'name': 'C4', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,259 P91424 INFO Processing column: {'name': 'C5', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,297 P91424 INFO Processing column: {'name': 'C6', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,330 P91424 INFO Processing column: {'name': 'C7', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,391 P91424 INFO Processing column: {'name': 'C8', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,427 P91424 INFO Processing column: {'name': 'C9', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,458 P91424 INFO Processing column: {'name': 'C10', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,537 P91424 INFO Processing column: {'name': 'C11', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,588 P91424 INFO Processing column: {'name': 'C12', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,729 P91424 INFO Processing column: {'name': 'C13', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,780 P91424 INFO Processing column: {'name': 'C14', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,812 P91424 INFO Processing column: {'name': 'C15', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:08,860 P91424 INFO Processing column: {'name': 'C16', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:09,015 P91424 INFO Processing column: {'name': 'C17', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:09,055 P91424 INFO Processing column: {'name': 'C18', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:09,104 P91424 INFO Processing column: {'name': 'C19', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:09,145 P91424 INFO Processing column: {'name': 'C20', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:09,181 P91424 INFO Processing column: {'name': 'C21', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:09,327 P91424 INFO Processing column: {'name': 'C22', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:09,363 P91424 INFO Processing column: {'name': 'C23', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:09,398 P91424 INFO Processing column: {'name': 'C24', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:09,477 P91424 INFO Processing column: {'name': 'C25', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:09,508 P91424 INFO Processing column: {'name': 'C26', 'active': True, 'dtype': 'str', 'type': 'categorical', 'na_value': ''}
+2022-05-28 12:01:09,573 P91424 INFO Set feature index...
+2022-05-28 12:01:09,573 P91424 INFO Pickle feature_encoder: ./data/criteo_x1/feature_encoder.pkl
+2022-05-28 12:01:09,621 P91424 INFO Save feature_map to json: ./data/criteo_x1/feature_map.json
+2022-05-28 12:01:09,622 P91424 INFO Set feature encoder done.
+2022-05-28 12:01:09,622 P91424 INFO Transform feature columns...
+2022-05-28 12:01:13,763 P91424 INFO Saving data to h5: ./data/criteo_x1/train.h5
+2022-05-28 12:01:14,167 P91424 INFO Preprocess feature columns...
+2022-05-28 12:01:18,178 P91424 INFO Transform feature columns...
+2022-05-28 12:01:22,592 P91424 INFO Saving data to h5: ./data/criteo_x1/valid.h5
+2022-05-28 12:01:22,967 P91424 INFO Preprocess feature columns...
+2022-05-28 12:01:26,675 P91424 INFO Transform feature columns...
+2022-05-28 12:01:30,513 P91424 INFO Saving data to h5: ./data/criteo_x1/test.h5
+2022-05-28 12:01:30,820 P91424 INFO Transform csv data to h5 done.
+2022-05-28 12:01:30,820 P91424 INFO Loading data...
+2022-05-28 12:01:30,822 P91424 INFO Loading data from h5: ./data/criteo_x1/train.h5
+2022-05-28 12:01:30,939 P91424 INFO Loading data from h5: ./data/criteo_x1/valid.h5
+2022-05-28 12:01:31,071 P91424 INFO Train samples: total/499999, pos/128430, neg/371569, ratio/25.69%, blocks/1
+2022-05-28 12:01:31,071 P91424 INFO Validation samples: total/499999, pos/125502, neg/374497, ratio/25.10%, blocks/1
+2022-05-28 12:01:31,072 P91424 INFO Loading train data done.
+2022-05-28 12:01:31,149 P91424 INFO Total number of parameters: 3943068.
+2022-05-28 12:01:31,149 P91424 INFO Start training: 50 batches/epoch
+2022-05-28 12:01:31,149 P91424 INFO ************ Epoch=1 start ************
+2022-05-28 12:12:48,050 P91424 INFO [Metrics] logloss: 0.486780 - AUC: 0.746749
+2022-05-28 12:12:48,053 P91424 INFO Save best model: monitor(max): 0.259969
+2022-05-28 12:12:48,124 P91424 INFO --- 50/50 batches finished ---
+2022-05-28 12:12:53,131 P91424 INFO Train loss: 0.515406
+2022-05-28 12:12:53,131 P91424 INFO ************ Epoch=1 end ************
